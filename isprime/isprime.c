@@ -18,6 +18,10 @@ int main(int argc, char**argv)
 		{
 			printf("%lld is prime.\n", i);
 		}
+		else
+		{
+			printf("%lld is composite.\n", i);
+		}
 	}
 	return 0;
 }

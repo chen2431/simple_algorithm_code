@@ -1,22 +1,22 @@
 #include <stdio.h>
 
-unsigned int fibonacci(unsigned int n);
+unsigned long fibonacci(unsigned long n);
 
 int main(void)
 {
-	unsigned int n, rlt;
+	unsigned long n, rlt;
 	printf("enter an integer large than 0:");
-	scanf("%d", &n);
-	printf("n = %d\n", n);
+	scanf("%lld", &n);
+	printf("n = %lld\n", n);
 
 	rlt = fibonacci(n);
 
-	printf("f(%d) =  %d\n", n,  rlt);
+	printf("f(%lld) =  %lld\n", n,  rlt);
 
 	return 0;
 }
 
-unsigned int fibonacci(unsigned int n)
+unsigned long fibonacci(unsigned long n)
 {
 	if(n==1)
 	{
